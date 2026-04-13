@@ -1,0 +1,1420 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* ============================= */
+/* header */
+header {
+  font-family: "Noto Serif KR", serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #fff;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+header.bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+header h1 img {
+  width: 100%;
+}
+header nav {
+  display: flex;
+}
+header nav ul.txtnav li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+header nav .navibar:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+header nav .navibar:hover i {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+header nav .navibar {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+header .menubar:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+header .menubar {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+header > ul li:hover {
+  font-weight: bold;
+}
+
+/* visual */
+#visual {
+  font-family: "Noto Serif KR", serif;
+}
+#visual .swiper-slide {
+  position: relative;
+}
+#visual .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#visual .pageination-color .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+#visual .swiper-slide .txtbox h2 {
+  width: fit-content;
+  background-color: #fff;
+}
+#visual .swiper-slide:nth-child(1) .txtbox h2:nth-child(1) {
+  padding: 0.7rem 1rem 0.4rem;
+  border-radius: 1rem 1rem 0px 0px;
+}
+#visual .swiper-slide:nth-child(1) .txtbox h2:nth-child(2) {
+  border-radius: 0px 1rem 1rem 1rem;
+  padding: 0.4rem 1rem 0.7rem;
+}
+#visual .swiper-slide:nth-child(2) .txtbox h2:nth-child(1) {
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+}
+#visual .swiper-slide:nth-child(3) .txtbox h2:nth-child(1) {
+  padding: 0.7rem 1rem 0.4rem;
+  border-radius: 1rem 1rem 1rem 0px;
+}
+#visual .swiper-slide:nth-child(3) .txtbox h2:nth-child(2) {
+  border-radius: 0px 0px 1rem 1rem;
+  padding: 0.4rem 1rem 0.7rem;
+}
+#visual .swiper-slide:nth-child(4) .txtbox h2:nth-child(1) {
+  padding: 0.7rem 1rem 0.4rem;
+  border-radius: 1rem 1rem 0px 0px;
+}
+#visual .swiper-slide:nth-child(4) .txtbox h2:nth-child(2) {
+  border-radius: 0px 1rem 1rem 1rem;
+  padding: 0.4rem 1rem 0.7rem;
+}
+#visual .swiper-slide:nth-child(4) .txtbox h3:nth-child(1) {
+  padding: 0.7rem 1rem 0.4rem;
+  border-radius: 1rem 1rem 0px 0px;
+}
+#visual .swiper-slide:nth-child(4) .txtbox h3:nth-child(2) {
+  border-radius: 0px 1rem 0px 1rem;
+  padding: 0.4rem 1rem 0.7rem;
+}
+#visual .swiper-slide .txtbox h3 {
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.7rem 1rem;
+  margin: 2rem 0px;
+  background-color: #fff;
+}
+#visual .swiper-slide .txtbox p {
+  width: fit-content;
+  border-radius: 5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+#visual .swiper-slide .txtbox p a {
+  display: block;
+}
+#visual .swiper-slide .txtbox p:hover {
+  background-color: darkgreen;
+  transition: 0.5s;
+}
+#visual .swiper-slide .txtbox {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all 0.8s ease;
+}
+
+#visual .swiper-slide .txtbox.active {
+  opacity: 1;
+  transform: translateY(-200px);
+}
+
+/* container */
+/* con01 */
+#container {
+  width: 100%;
+}
+.con01 {
+  font-family: "Noto Serif KR", serif;
+  min-height: 100vh;
+  background-color: #000;
+}
+.con01 .mySwiper {
+  width: 100%;
+  overflow: visible;
+  margin: 0px auto;
+}
+.con01 ul {
+  flex: 0 0;
+  box-sizing: border-box;
+}
+
+.con01 ul li {
+  width: 100%;
+  margin: 0px auto;
+  flex: 0 0 100%;
+}
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+.wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con01 h2 {
+  color: #fff;
+  margin: 30px;
+}
+.con01 .swiper-slide h2 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.con01 .swiper-slide .wrap {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.con01 .swiper-slide .up {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.5s;
+}
+.purple h2 span {
+  background-color: rgb(99, 37, 156);
+}
+.purple .right {
+  color: rgb(99, 37, 156);
+}
+.red h2 span {
+  background-color: rgb(224, 33, 33);
+}
+.red .right {
+  color: rgb(224, 33, 33);
+}
+.blue h2 span {
+  background-color: rgb(35, 63, 224);
+}
+.blue .right {
+  color: rgb(35, 63, 224);
+}
+
+.con01 ul li .wrap {
+  position: relative;
+}
+.wrap .right p {
+  text-align: right;
+  padding: 2rem;
+  word-break: keep-all;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.con01 .swiper-slide {
+  width: 100%;
+}
+.con01 .swiper-slide-active {
+  width: 100%;
+}
+
+.con01 .swiper-pagination {
+  margin-bottom: -50px;
+}
+.con01 .swiper-pagination-bullet {
+  background-color: #fff;
+}
+/* banner */
+.banner {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  width: 100%;
+  background-image: url(../img/welfare_banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul.bncontent {
+  font-size: 2rem;
+}
+ul.bncontent h6 {
+  margin-top: 1rem;
+}
+ul.bncontent h6 span {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* con02 */
+.con02 {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.con02 h2 {
+  color: rgb(44, 37, 87);
+  transform: translateY(30px);
+  opacity: 0;
+}
+.con02 .float {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.3s;
+}
+.con02 > p {
+  font-weight: bold;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.mySwiper3 {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 50px;
+}
+.con02 .mySwiper3 ul {
+  width: 100%;
+}
+.con02 .mySwiper3 ul li {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.con02 .mySwiper3 li img {
+  width: 100%;
+}
+.con02 .mySwiper3 li .pic {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.con02 .mySwiper3 li:hover .pic {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.con02 .mySwiper3 li .file {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.con02 .mySwiper3 li .txt {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+}
+.con02 .mySwiper3 li:hover i {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.con02 .mySwiper3 li i {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+}
+.mySwiper3 .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* con03 */
+.con03 {
+  width: 100%;
+  background-color: #faebd7;
+  padding: 5rem;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.con03 .faq {
+  background-color: rgb(211, 155, 129);
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+.con03 h6 {
+  color: #fff;
+  width: 105px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid rgb(136, 93, 73);
+  border-radius: 50%;
+}
+.con03 h2 {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(151, 105, 84);
+  word-break: keep-all;
+}
+.con03 h2 span {
+  color: #222;
+}
+.con03 > p {
+  word-break: keep-all;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(136, 93, 73);
+  margin-bottom: 1rem;
+}
+.con03 > p span {
+  color: rgb(71, 50, 39);
+  font-weight: bold;
+}
+/* con03 ul */
+.con03 ul li {
+  background-color: #fff;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.con03 ul li.raise {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.con03 ul li .over .down {
+  position: relative;
+}
+
+.con03 ul li .over .down i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.con03 ul li.on .plus {
+  display: none;
+}
+
+.con03 ul li.on .minus {
+  display: flex;
+}
+
+.con03 ul li .over .que {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.con03 ul li .over .que:hover p {
+  color: blueviolet;
+  transition: 0.3s;
+}
+.con03 ul li .over {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.con03 ul li .over .down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.con03 ul li .under {
+  color: #555;
+  display: none;
+}
+.con03 ul li .under table {
+  border-top: 2px solid #111;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.con03 ul li .under table tr th {
+  padding: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+.con03 ul li .under table tr td {
+  padding: 0.2rem;
+  border-bottom: 1px solid #333;
+}
+.con03 ul li .under span {
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 4rem;
+  background-color: rgb(110, 106, 103);
+  color: #ddd;
+  font-size: 0.8rem;
+}
+footer .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .first .right {
+  display: flex;
+  gap: 2rem;
+}
+footer .second {
+  margin: 3rem 0px;
+  word-break: keep-all;
+}
+footer .second p {
+  line-height: 2rem;
+}
+
+@media (min-width: 1361px) {
+  .wrap .right h3 {
+    font-size: clamp(20px, 30px, 35px);
+  }
+  .wrap .right p {
+    font-size: clamp(12px, 1.2vw, 16px);
+  }
+  .wrap .right h4 {
+    font-size: clamp(120px, 1vw, 150px);
+  }
+  .wrap .right h4 span {
+    font-size: clamp(30px, 1vw, 35px);
+  }
+}
+@media (max-width: 1360px) and (min-width: 1025px) {
+  .wrap .right h3 {
+    font-size: clamp(15px, 2.5vw, 35px);
+  }
+  .wrap .right p {
+    font-size: clamp(10px, 1vw, 16px);
+  }
+  .wrap .right h4 {
+    font-size: clamp(80px, 0.5vw, 150px);
+  }
+  .wrap .right h4 span {
+    font-size: clamp(20px, 0.5vw, 35px);
+  }
+}
+
+/* ============================= */
+/* pc버전 */
+@media (min-width: 1025px) {
+  /* header */
+  header {
+    height: 100px;
+    padding: 1rem 2rem;
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+  }
+  header nav ul.txtnav {
+    display: flex;
+    padding: 0px 1rem;
+  }
+  header nav ul.txtnav li {
+    padding: 0.7rem 1rem;
+  }
+  header > ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .menubar {
+    display: none;
+  }
+  .navibar {
+    display: none;
+  }
+  /* visual */
+  #visual .swiper-slide .txtbox {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-70%);
+  }
+  #visual .swiper-slide img:nth-child(2) {
+    display: none;
+  }
+  #visual .swiper-slide .txtbox h2 {
+    font-size: 3rem;
+  }
+  #visual .swiper-slide .txtbox h3 {
+    font-size: 2rem;
+  }
+
+  /* container */
+  /* con01 */
+  #container {
+    width: 100%;
+  }
+  .con01 {
+    height: 100%;
+    background-color: #000;
+    padding: 100px 30px;
+  }
+  .con01 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  .con01 ul {
+    width: 100%;
+    height: 100%;
+    flex: 0 0;
+  }
+
+  .con01 ul li {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    flex: 0 0 100%;
+  }
+  .wrap {
+    width: 90%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    height: clamp(250px, 40vw, 500px);
+  }
+  .wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .con01 h2 {
+    font-size: clamp(20px, 40px, 50px);
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .wrap .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 80%;
+  }
+
+  .wrap .right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 90%;
+    background: #fff;
+    padding: 2rem;
+  }
+  /* banner */
+  .banner {
+    height: 300px;
+  }
+  ul.bncontent {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    text-align: center;
+  }
+  /* con02 */
+  .con02 {
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+  .con02 h2 {
+    padding: 5rem 3rem 0px;
+    font-size: 2.5rem;
+  }
+  .con02 > p {
+    padding: 2rem 3rem;
+    font-weight: bold;
+  }
+  .con02 .mySwiper3 ul {
+    width: 100%;
+  }
+  .con02 .mySwiper3 ul li {
+    width: 400px;
+    height: 465px;
+    border-radius: 1rem;
+  }
+  .con02 .mySwiper3 li .file {
+    transform: translateY(40px);
+  }
+  .con02 .mySwiper3 li:hover .file {
+    transform: translateY(0px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt {
+    padding: 1rem;
+  }
+  .con02 .mySwiper3 li:hover .txt {
+    transform: translateY(-40px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt h3 {
+    margin: 1rem 0px 5.7rem;
+    font-size: 1.5rem;
+  }
+  .con02 .mySwiper3 li i {
+    font-size: 3rem;
+  }
+  .mySwiper3 .swiper-pagination-bullet {
+    width: 150px;
+    height: 8px;
+    border-radius: 0;
+    background: #ccc;
+    opacity: 1;
+  }
+  .mySwiper3 .swiper-pagination-bullet-active {
+    background: #4d1c86;
+  }
+
+  /* con03 */
+  .con03 ul {
+    margin: 3rem 0px;
+  }
+  .con03 ul li {
+    margin: 2rem auto;
+    width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+  }
+
+  .con03 ul li .over .down i {
+    font-size: 2rem;
+  }
+  .con03 ul li .over .que {
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+  .con03 ul li .under {
+    margin-top: 1rem;
+    padding: 0px 80px;
+  }
+}
+
+/* ============================= */
+/* 태블릿 */
+@media (max-width: 1024px) and (min-width: 801px) {
+  /* header */
+  header {
+    height: 100px;
+    padding: 1rem 2rem;
+    font-size: clamp(0.7rem, 1.4vw, 0.9rem);
+  }
+  header nav ul.txtnav {
+    display: flex;
+    padding: 0px 1rem;
+  }
+  header nav ul.txtnav li {
+    padding: 0.5rem 0.8rem;
+  }
+  header > ul {
+    display: flex;
+    gap: 0.7rem;
+  }
+  .menubar {
+    display: none;
+  }
+  .navibar {
+    display: none;
+  }
+  /* visual */
+  #visual .swiper-slide .txtbox {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-70%);
+  }
+  #visual .swiper-slide img:nth-child(2) {
+    display: none;
+  }
+  #visual .swiper-slide .txtbox h2 {
+    font-size: 2rem;
+  }
+  #visual .swiper-slide .txtbox h3 {
+    font-size: 1.2rem;
+  }
+  #visual .swiper-slide .txtbox p {
+    font-size: 0.7rem;
+  }
+  /* container */
+  /* con01 */
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+  .con01 {
+    height: auto;
+    min-height: 100vh;
+    background-color: #000;
+    padding: 30px;
+  }
+  .con01 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  .con01 ul {
+    width: 100%;
+    height: 100%;
+    flex: 0 0;
+  }
+
+  .con01 ul li {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    flex: 0 0 100%;
+  }
+  .wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  .wrap img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .con01 h2 {
+    font-size: clamp(20px, 30px, 40px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .wrap .left {
+    position: static;
+    top: 0;
+    width: 85%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .wrap .right {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    height: 300px;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .wrap .right h3 {
+    font-size: clamp(16px, 2vw, 35px);
+  }
+  .wrap .right p {
+    font-size: clamp(14px, 1vw, 16px);
+  }
+  .wrap .right h4 {
+    font-size: clamp(80px, 0.5vw, 150px);
+  }
+  .wrap .right h4 span {
+    font-size: clamp(20px, 0.5vw, 35px);
+  }
+  /* banner */
+  .banner {
+    height: 300px;
+  }
+  ul.bncontent {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    text-align: center;
+  }
+  /* con02 */
+  .con02 {
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+  .con02 h2 {
+    padding: 5rem 3rem 0px;
+    font-size: 2.3rem;
+  }
+  .con02 > p {
+    padding: 2rem 3rem;
+    font-weight: bold;
+  }
+  .con02 .mySwiper3 ul {
+    width: 100%;
+  }
+  .con02 .mySwiper3 ul li {
+    width: 350px;
+    height: 415px;
+    border-radius: 1rem;
+  }
+  .con02 .mySwiper3 li .file {
+    transform: translateY(30px);
+  }
+  .con02 .mySwiper3 li:hover .file {
+    transform: translateY(0px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt {
+    padding: 1rem;
+  }
+  .con02 .mySwiper3 li:hover .txt {
+    transform: translateY(-30px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt h3 {
+    margin: 0.5rem 0px 4.5rem;
+    font-size: 1.5rem;
+  }
+  .con02 .mySwiper3 li i {
+    font-size: 2.5rem;
+  }
+  .mySwiper3 .swiper-pagination-bullet {
+    width: 100px;
+    height: 8px;
+    border-radius: 0;
+    background: #ccc;
+    opacity: 1;
+  }
+  .mySwiper3 .swiper-pagination-bullet-active {
+    background: #4d1c86;
+  }
+
+  /* con03 */
+  .con03 ul {
+    margin: 3rem 0px;
+  }
+  .con03 ul li {
+    margin: 2rem auto;
+    width: 550px;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .con03 ul li .over .down i {
+    font-size: 1.5rem;
+  }
+  .con03 ul li .over .que {
+    gap: 1rem;
+    font-size: 1rem;
+    word-break: keep-all;
+  }
+  .con03 ul li .under {
+    margin-top: 0.5rem;
+    padding: 0px 80px;
+    font-size: 0.8rem;
+  }
+}
+/* ============================= */
+/* 큰모바일 */
+@media (max-width: 800px) and (min-width: 481px) {
+  /* header */
+  header h1 {
+    width: clamp(120px, 3vw, 160px);
+  }
+  header {
+    height: 85px;
+    padding: 1rem 1rem;
+  }
+  .navibar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header nav ul {
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  header ul li {
+    padding: 0.2rem;
+  }
+  header > ul div {
+    display: none;
+  }
+
+  header > ul {
+    position: absolute;
+    top: 65px;
+    right: 5%;
+    text-align: center;
+    display: none;
+  }
+  .menubar:hover i {
+    color: #fff;
+  }
+
+  /* visual */
+  #visual .swiper-slide .txtbox {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-70%);
+  }
+  #visual .swiper-slide img:nth-child(1) {
+    display: none;
+  }
+
+  #visual .swiper-slide .txtbox h2 {
+    font-size: 1.5rem;
+  }
+  #visual .swiper-slide .txtbox h3 {
+    font-size: 1rem;
+  }
+  #visual .swiper-slide .txtbox p {
+    font-size: 0.6rem;
+  }
+  /* container */
+  /* con01 */
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+  .con01 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #000;
+  }
+  .con01 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  .con01 .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    flex: 0 0;
+    box-sizing: border-box;
+  }
+
+  .con01 ul li {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    flex: 0 0 100%;
+  }
+  .wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .wrap img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .con01 h2 {
+    width: 95%;
+    text-align: center;
+    font-size: clamp(20px, 25px, 30px);
+    padding: 1rem;
+    box-sizing: border-box;
+    word-break: keep-all;
+  }
+  .wrap .left {
+    position: static;
+    top: 0;
+    width: 85%;
+    height: 300px;
+    padding: 1rem;
+  }
+
+  .wrap .right {
+    position: s;
+
+    bottom: 0;
+    width: 85%;
+    min-height: 300px;
+    max-height: 350px;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .wrap .right h3 {
+    font-size: clamp(16px, 2vw, 35px);
+  }
+  .wrap .right p {
+    font-size: clamp(14px, 1vw, 16px);
+  }
+  .wrap .right h4 {
+    font-size: clamp(80px, 0.5vw, 150px);
+  }
+  .wrap .right h4 span {
+    font-size: clamp(20px, 0.5vw, 35px);
+  }
+  /* banner */
+  .banner {
+    padding: 3rem 0px;
+    box-sizing: border-box;
+  }
+  ul.bncontent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+  ul.bncontent li {
+    padding: 1rem;
+  }
+  /* con02 */
+  .con02 {
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+  .con02 h2 {
+    padding: 4rem 3rem 0px;
+    font-size: 2rem;
+  }
+  .con02 > p {
+    padding: 2rem 3rem;
+    font-weight: bold;
+  }
+  .con02 .mySwiper3 ul {
+    width: 100%;
+  }
+  .con02 .mySwiper3 ul li {
+    width: 300px;
+    height: 365px;
+    border-radius: 1rem;
+  }
+  .con02 .mySwiper3 li .file {
+    transform: translateY(20px);
+  }
+  .con02 .mySwiper3 li:hover .file {
+    transform: translateY(0px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt {
+    padding: 1rem 0.7rem;
+  }
+  .con02 .mySwiper3 li:hover .txt {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt h3 {
+    margin: 0.3rem 0px 4.1rem;
+    font-size: 1.2rem;
+  }
+  .con02 .mySwiper3 li i {
+    font-size: 2rem;
+  }
+  .mySwiper3 .swiper-pagination-bullet-active {
+    background: #4d1c86;
+  }
+  /* con03 */
+  .con03 {
+    padding: 1rem;
+  }
+  .con03 h2 {
+    font-size: 1.5rem;
+  }
+  .con03 ul {
+    margin: 3rem 0px;
+  }
+  .con03 ul li {
+    margin: 2rem auto;
+    width: 430px;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .con03 ul li .over .down i {
+    font-size: 1.5rem;
+  }
+  .con03 ul li .over .que {
+    gap: 1rem;
+    font-size: 1rem;
+    margin-right: 30px;
+    word-break: keep-all;
+  }
+  .con03 ul li .under {
+    margin-top: 0.5rem;
+    padding: 0px 80px;
+    font-size: 0.8rem;
+  }
+  /* footer */
+  footer .second p {
+    line-height: 1.5rem;
+  }
+  footer .first .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* ============================= */
+/* 모바일 */
+@media (max-width: 480px) {
+  /* header */
+  header h1 {
+    width: clamp(70px, 3vw, 100px);
+  }
+  header {
+    height: 85px;
+    padding: 1rem 1rem;
+  }
+  .navibar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header nav ul {
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  header ul li {
+    padding: 0.2rem;
+  }
+  header nav ul.txtnav {
+    padding: 0px 1rem;
+  }
+  header nav ul.txtnav li {
+    padding: 0.5rem 0.8rem;
+  }
+  header > ul div {
+    display: none;
+  }
+  .menubar:hover i {
+    color: #fff;
+  }
+
+  header > ul {
+    position: absolute;
+    top: 65px;
+    right: 5%;
+    text-align: center;
+    display: none;
+  }
+
+  /* visual */
+  #visual .swiper-slide img:nth-child(1) {
+    display: none;
+  }
+  #visual .swiper-slide .txtbox h2 {
+    font-size: 1rem;
+  }
+  #visual .swiper-slide .txtbox h3 {
+    display: none;
+  }
+  #visual .swiper-slide .txtbox p {
+    display: none;
+  }
+  #visual .swiper-slide .txtbox {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  /* container */
+  .con01 .swiper-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .con01 .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .con01 .swiper-slide {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap .left {
+    width: 90%;
+    height: 200px;
+    margin: 0px auto;
+  }
+  .wrap .right {
+    width: 90%;
+    height: 100px;
+    max-height: 100px;
+    background-color: #fff;
+    margin: 0px auto;
+  }
+  .wrap .right p {
+    display: none;
+  }
+  .mySwiper2 h2 {
+    font-size: clamp(15px, 17px, 25px);
+  }
+
+  .wrap .right h3 {
+    font-size: clamp(16px, 2vw, 35px);
+  }
+  .wrap .right h4 {
+    font-size: clamp(40px, 0.5vw, 50px);
+  }
+  .wrap .right h4 span {
+    font-size: clamp(20px, 0.5vw, 35px);
+  }
+  /* banner */
+  .banner {
+    padding: 3rem 0px;
+    box-sizing: border-box;
+  }
+  ul.bncontent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+  ul.bncontent {
+    font-size: 1.5rem;
+  }
+  ul.bncontent h6 {
+    margin-top: 0.5rem;
+  }
+  ul.bncontent h6 span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  /* con02 */
+  .con02 h2 {
+    padding: 4rem 3rem 0px;
+    font-size: 1.6rem;
+    word-break: keep-all;
+  }
+  .con02 > p {
+    padding: 2rem 3rem;
+    font-weight: bold;
+    word-break: keep-all;
+  }
+  .con02 .mySwiper3 ul {
+    width: 100%;
+  }
+  .con02 .mySwiper3 ul li {
+    width: 250px;
+    height: 315px;
+    border-radius: 1rem;
+  }
+  .con02 .mySwiper3 li .file {
+    transform: translateY(10px);
+  }
+  .con02 .mySwiper3 li:hover .file {
+    transform: translateY(0px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt {
+    padding: 1rem 0.4rem;
+  }
+  .con02 .mySwiper3 li:hover .txt {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  .con02 .mySwiper3 li .txt h5 {
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+  .con02 .mySwiper3 li .txt h3 {
+    margin: 0.3rem 0px 3.5rem;
+    font-size: 1rem;
+  }
+  .con02 .mySwiper3 li .txt p {
+    font-size: 0.9rem;
+  }
+  .con02 .mySwiper3 li i {
+    font-size: 1.7rem;
+  }
+  .mySwiper3 .swiper-pagination-bullet-active {
+    background: #4d1c86;
+  }
+  /* con03 */
+  .con03 h2 {
+    font-size: 1.5rem;
+  }
+  .con03 {
+    padding: 1rem;
+  }
+  .con03 ul {
+    margin: 3rem 0px;
+  }
+  .con03 ul li {
+    margin: 2rem auto;
+    width: 250px;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .con03 ul li .over img {
+    width: 30px;
+  }
+  .con03 ul li .over .down i {
+    font-size: 1.5rem;
+  }
+  .con03 ul li .over .que {
+    padding-right: 20px;
+    gap: 1rem;
+    font-size: 0.8rem;
+    word-break: keep-all;
+    width: auto;
+  }
+  .con03 ul li .under {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    height: auto;
+  }
+  /* footer */
+  footer .first {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .first .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  footer .second {
+    padding: 1rem;
+  }
+  footer .second p {
+    line-height: 1.5rem;
+  }
+}
