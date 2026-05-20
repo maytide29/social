@@ -49,7 +49,7 @@ $(function () {
         if (pos < con01 - 600) {
           resetCon01();
         }
-        if (pos >= con01 - 400 && !sc01) {
+        if (pos >= con01 - 100 && !sc01) {
           $(".con01 h2").addClass("up");
           sc01 = true;
         }
